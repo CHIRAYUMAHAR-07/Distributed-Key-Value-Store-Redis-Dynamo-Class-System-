@@ -1,0 +1,75 @@
+Metadata-Version: 2.4
+Name: distributed-kvstore
+Version: 1.0.0
+Summary: A Redis/Dynamo-inspired distributed key-value store
+Home-page: https://github.com/yourusername/distributed-kv-store
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Topic :: System :: Distributed Computing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi==0.104.1
+Requires-Dist: uvicorn==0.24.0
+Requires-Dist: redis==5.0.1
+Requires-Dist: pydantic==2.5.0
+Requires-Dist: asyncio-redis==0.16.0
+Requires-Dist: aioredis==2.0.1
+Requires-Dist: httpx==0.25.1
+Requires-Dist: cryptography==41.0.7
+Requires-Dist: python-consul==1.1.0
+Requires-Dist: prometheus-client==0.19.0
+Requires-Dist: streamlit==1.29.0
+Requires-Dist: pytest==7.4.3
+Requires-Dist: pytest-asyncio==0.21.1
+Requires-Dist: bloom-filter2==2.0.0
+Requires-Dist: msgpack==1.0.7
+Requires-Dist: aiohttp==3.9.1
+Requires-Dist: asyncio==3.4.3
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.19.0; extra == "dev"
+Requires-Dist: black>=22.0.0; extra == "dev"
+Requires-Dist: flake8>=4.0.0; extra == "dev"
+Requires-Dist: mypy>=0.950; extra == "dev"
+Provides-Extra: dashboard
+Requires-Dist: streamlit>=1.12.0; extra == "dashboard"
+Requires-Dist: plotly>=5.10.0; extra == "dashboard"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Distributed Key-Value Store
+
+A Redis/DynamoDB-inspired distributed key-value store with sharding, replication, TTL, and advanced eviction policies.
+
+## Features
+
+### Core Features
+- **Sharding**: Consistent hashing with virtual nodes
+- **Replication**: Raft consensus protocol with quorum-based operations
+- **TTL**: Hierarchical timing wheels for efficient expiration
+- **Eviction Policies**: LRU, LFU, ARC, and adaptive policy selection
+- **Fault Tolerance**: Automatic failure detection and recovery
+- **Consistency Levels**: Strong, quorum, and eventual consistency
+
+### Advanced Features
+- **LSM-Tree Storage**: Log-structured merge tree for efficient writes
+- **Bloom Filters**: Fast membership checks
+- **Adaptive Caching**: Machine learning for workload pattern detection
+- **Multi-Tier Caching**: Memory + disk storage with automatic tiering
+- **Real-time Monitoring**: Web dashboard for cluster observability

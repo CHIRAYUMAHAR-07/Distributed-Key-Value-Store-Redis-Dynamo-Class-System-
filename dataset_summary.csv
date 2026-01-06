@@ -1,0 +1,13 @@
+dataset,records,time_range,update_frequency,description
+cluster_metrics,145,7 days,1 hour,Overall cluster performance and health
+node_metrics,3462,7 days,15 min,Per-node resource utilization and metrics
+request_metrics,360,7 days,1 hour,Request/operation type analysis
+shard_metrics,365,7 days,2 hours,Shard distribution and load balancing
+client_metrics,870,7 days,1 hour,Client/application usage patterns
+eviction_metrics,1445,7 days,30 min,Cache eviction policy performance
+replication_metrics,2308,7 days,15 min,Replication and consistency metrics
+cost_metrics,43,7 days,1 day,Cost analysis and optimization
+incident_log,8,N/A,6 hours,Incident and alert history
+benchmark_comparison,30,N/A,Static,Comparison with other systems
+key_pattern_analysis,9,N/A,Static,Key access pattern analysis
+geographic_metrics,294,N/A,3 hours,Geographic distribution metrics

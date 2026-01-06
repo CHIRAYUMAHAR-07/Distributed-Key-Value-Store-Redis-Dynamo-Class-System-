@@ -1,0 +1,31 @@
+system,metric,score,value,category,is_our_system
+KV Store (Ours),Throughput,9.066630376666998,"74,691 ops/sec",Performance,True
+KV Store (Ours),Latency,8.703838644579557,6.2 ms,Performance,True
+KV Store (Ours),Cost,9.0,$0.37/M ops,Cost,True
+KV Store (Ours),Durability,8.873410719131511,99.981%,Reliability,True
+KV Store (Ours),Consistency,8.925373367960697,Eventual,Reliability,True
+KV Store (Ours),Scalability,9.025989630479273,967 nodes,Reliability,True
+Redis Cluster,Throughput,7.096065447731009,"137,919 ops/sec",Performance,False
+Redis Cluster,Latency,8.282380412143851,8.3 ms,Performance,False
+Redis Cluster,Cost,7.088947229492184,$1.75/M ops,Cost,False
+Redis Cluster,Durability,8.204181436243534,99.936%,Reliability,False
+Redis Cluster,Consistency,7.32198325976276,Strong,Reliability,False
+Redis Cluster,Scalability,7.831758901136395,215 nodes,Reliability,False
+DynamoDB,Throughput,8.674499004564671,"122,606 ops/sec",Performance,False
+DynamoDB,Latency,8.682277114535845,1.3 ms,Performance,False
+DynamoDB,Cost,6.5,$1.66/M ops,Cost,False
+DynamoDB,Durability,8.22092344496378,99.930%,Reliability,False
+DynamoDB,Consistency,8.129802001013003,Strong,Reliability,False
+DynamoDB,Scalability,8.277426884737592,815 nodes,Reliability,False
+Cassandra,Throughput,7.640628221323061,"105,460 ops/sec",Performance,False
+Cassandra,Latency,7.930927651801579,7.8 ms,Performance,False
+Cassandra,Cost,8.485240319008113,$1.60/M ops,Cost,False
+Cassandra,Durability,8.129806575625421,99.938%,Reliability,False
+Cassandra,Consistency,8.41534629719148,Strong,Reliability,False
+Cassandra,Scalability,8.4028189508938,481 nodes,Reliability,False
+etcd,Throughput,6.537546935284377,"59,714 ops/sec",Performance,False
+etcd,Latency,7.183133484710075,1.5 ms,Performance,False
+etcd,Cost,6.6371021712377285,$1.18/M ops,Cost,False
+etcd,Durability,6.400143031728986,99.949%,Reliability,False
+etcd,Consistency,6.338856828440491,Strong,Reliability,False
+etcd,Scalability,6.099871933190021,334 nodes,Reliability,False

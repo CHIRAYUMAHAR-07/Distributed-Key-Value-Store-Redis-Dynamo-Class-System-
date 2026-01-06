@@ -1,0 +1,4 @@
+[console_scripts]
+kvstore = kvstore.cli:main
+kvstore-coordinator = kvstore.coordinator:main
+kvstore-node = kvstore.storage_node:main

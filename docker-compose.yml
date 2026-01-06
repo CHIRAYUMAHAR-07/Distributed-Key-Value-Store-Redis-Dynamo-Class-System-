@@ -1,0 +1,85 @@
+version: "3.8"
+
+services:
+  coordinator:
+    build: .
+    command: python -m kv-store.coordinator
+    ports:
+      - "8080:8080"
+    environment:
+      - COORDINATOR_HOST=0.0.0.0
+      - COORDINATOR_PORT=8080
+    volumes:
+      - ./data/coordinator:/app/data
+    networks:
+      - kvstore-network
+
+  node-1:
+    build: .
+    command: python -m kv-store.storage_node --id node-1 --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      - NODE_ID=node-1
+      - HOST=0.0.0.0
+      - PORT=8001
+    volumes:
+      - ./data/node-1:/app/data
+    networks:
+      - kvstore-network
+    depends_on:
+      - coordinator
+
+  node-2:
+    build: .
+    command: python -m kv-store.storage_node --id node-2 --port 8002
+    ports:
+      - "8002:8002"
+    environment:
+      - NODE_ID=node-2
+      - HOST=0.0.0.0
+      - PORT=8002
+    volumes:
+      - ./data/node-2:/app/data
+    networks:
+      - kvstore-network
+    depends_on:
+      - coordinator
+
+  node-3:
+    build: .
+    command: python -m kv-store.storage_node --id node-3 --port 8003
+    ports:
+      - "8003:8003"
+    environment:
+      - NODE_ID=node-3
+      - HOST=0.0.0.0
+      - PORT=8003
+    volumes:
+      - ./data/node-3:/app/data
+    networks:
+      - kvstore-network
+    depends_on:
+      - coordinator
+
+  dashboard:
+    build: .
+    command: streamlit run src/dashboard/app.py --server.port 8501
+    ports:
+      - "8501:8501"
+    environment:
+      - COORDINATOR_URL=http://coordinator:8080
+    networks:
+      - kvstore-network
+    depends_on:
+      - coordinator
+
+networks:
+  kvstore-network:
+    driver: bridge
+
+volumes:
+  coordinator-data:
+  node-1-data:
+  node-2-data:
+  node-3-data:

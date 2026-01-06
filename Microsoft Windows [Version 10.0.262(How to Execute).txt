@@ -1,0 +1,327 @@
+Microsoft Windows [Version 10.0.26200.7462]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Chirayu Mahar>cd distributed-kv-store
+The system cannot find the path specified.
+
+C:\Users\Chirayu Mahar>cd desktop
+
+C:\Users\Chirayu Mahar\Desktop>cd distributed-kv-store
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>ls -la powerbi/01_generate_all_datasets.py
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>py 01_generate_all_datasets.py
+C:\Python314\python.exe: can't open file 'C:\\Users\\Chirayu Mahar\\Desktop\\distributed-kv-store\\01_generate_all_datasets.py': [Errno 2] No such file or directory
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>dir powerbi\01_generate_all_datasets.py
+ Volume in drive C is Acer
+ Volume Serial Number is FCAF-FF01
+
+ Directory of C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi
+
+01/05/2026  08:37 PM            43,496 01_generate_all_datasets.py
+               1 File(s)         43,496 bytes
+               0 Dir(s)  127,765,626,880 bytes free
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>python -c "import pandas, numpy; print('Dependencies OK')"
+Dependencies OK
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>pip install pandas numpy
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (2.3.3)
+Requirement already satisfied: numpy in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (2.4.0)
+Requirement already satisfied: python-dateutil>=2.8.2 in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (from pandas) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (from pandas) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (from pandas) (2025.3)
+Requirement already satisfied: six>=1.5 in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (from python-dateutil>=2.8.2->pandas) (1.17.0)
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>pip install -r requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+Collecting fastapi==0.104.1 (from -r requirements.txt (line 1))
+  Using cached fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+Collecting uvicorn==0.24.0 (from -r requirements.txt (line 2))
+  Using cached uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting redis==5.0.1 (from -r requirements.txt (line 3))
+  Using cached redis-5.0.1-py3-none-any.whl.metadata (8.9 kB)
+Collecting pydantic==2.5.0 (from -r requirements.txt (line 4))
+  Using cached pydantic-2.5.0-py3-none-any.whl.metadata (174 kB)
+Collecting asyncio-redis==0.16.0 (from -r requirements.txt (line 5))
+  Using cached asyncio_redis-0.16.0-py2.py3-none-any.whl.metadata (8.0 kB)
+Collecting aioredis==2.0.1 (from -r requirements.txt (line 6))
+  Using cached aioredis-2.0.1-py3-none-any.whl.metadata (15 kB)
+Collecting httpx==0.25.1 (from -r requirements.txt (line 7))
+  Using cached httpx-0.25.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting cryptography==41.0.7 (from -r requirements.txt (line 8))
+  Using cached cryptography-41.0.7-cp37-abi3-win_amd64.whl.metadata (5.3 kB)
+Collecting python-consul==1.1.0 (from -r requirements.txt (line 9))
+  Using cached python_consul-1.1.0-py2.py3-none-any.whl.metadata (11 kB)
+Collecting prometheus-client==0.19.0 (from -r requirements.txt (line 10))
+  Using cached prometheus_client-0.19.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting streamlit==1.29.0 (from -r requirements.txt (line 11))
+  Using cached streamlit-1.29.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting pytest==7.4.3 (from -r requirements.txt (line 12))
+  Using cached pytest-7.4.3-py3-none-any.whl.metadata (7.9 kB)
+Collecting pytest-asyncio==0.21.1 (from -r requirements.txt (line 13))
+  Using cached pytest_asyncio-0.21.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting bloom-filter2==2.0.0 (from -r requirements.txt (line 14))
+  Using cached bloom_filter2-2.0.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting msgpack==1.0.7 (from -r requirements.txt (line 15))
+  Using cached msgpack-1.0.7.tar.gz (166 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting aiohttp==3.9.1 (from -r requirements.txt (line 16))
+  Using cached aiohttp-3.9.1.tar.gz (7.5 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting asyncio==3.4.3 (from -r requirements.txt (line 17))
+  Using cached asyncio-3.4.3-py3-none-any.whl.metadata (1.7 kB)
+Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 1))
+  Using cached anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 1))
+  Using cached starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: typing-extensions>=4.8.0 in c:\users\chirayu mahar\appdata\roaming\python\python314\site-packages (from fastapi==0.104.1->-r requirements.txt (line 1)) (4.15.0)
+Collecting annotated-types>=0.4.0 (from pydantic==2.5.0->-r requirements.txt (line 4))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.14.1 (from pydantic==2.5.0->-r requirements.txt (line 4))
+  Using cached pydantic_core-2.14.1.tar.gz (359 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Installing backend dependencies ... done
+  Preparing metadata (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [24 lines of output]
+      Python reports SOABI: cp314-win_amd64
+      Computed rustc target triple: x86_64-pc-windows-msvc
+      Installation directory: C:\Users\Chirayu Mahar\AppData\Local\puccinialin\puccinialin\Cache
+      Rustup already downloaded
+      Installing rust to C:\Users\Chirayu Mahar\AppData\Local\puccinialin\puccinialin\Cache\rustup
+      warn: It looks like you have an existing rustup settings file at:
+      warn: C:\Users\Chirayu Mahar\.rustup\settings.toml
+      warn: Rustup will install the default toolchain as specified in the settings file,
+      warn: instead of the one inferred from the default host triple.
+      warn: installing msvc toolchain without its prerequisites
+      info: profile set to 'minimal'
+      info: default host triple is x86_64-pc-windows-msvc
+      warn: Updating existing toolchain, profile choice will be ignored
+      info: syncing channel updates for 'stable-x86_64-pc-windows-msvc'
+      info: default toolchain set to 'stable-x86_64-pc-windows-msvc'
+      Checking if cargo is installed
+      cargo 1.92.0 (344c4567c 2025-10-21)
+
+      Cargo, the Rust package manager, is not installed or is not on PATH.
+      This package requires Rust and Cargo to compile extensions. Install it through
+      the system's package manager or via https://rustup.rs/
+
+      Checking for Rust toolchain....
+      Rust not found, installing into a temporary directory
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>python powerbi/01_generate_all_datasets.py
+============================================================
+Generating Power BI Datasets for Distributed KV Store
+============================================================
+Generating cluster_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:19: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='1H')
+✓ Generated 145 records
+Generating node_metrics.csv...
+✓ Generated 3462 records
+Generating request_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:208: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-07', periods=24, freq='1H')
+✓ Generated 360 records
+Generating shard_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:280: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='2H')
+✓ Generated 365 records
+Generating client_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:370: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='1H')
+✓ Generated 870 records
+Generating eviction_metrics.csv...
+✓ Generated 1445 records
+Generating replication_metrics.csv...
+✓ Generated 2308 records
+Generating cost_metrics.csv...
+✓ Generated 43 records
+Generating incident_log.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:685: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='6H')
+✓ Generated 8 records
+Generating benchmark_comparison.csv...
+✓ Generated 30 records
+Generating key_pattern_analysis.csv...
+✓ Generated 9 records
+Generating geographic_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:894: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='3H')
+✓ Generated 294 records
+
+============================================================
+DATASET GENERATION COMPLETE
+============================================================
+Total datasets generated: 12
+Total records: 9,339
+Output directory: powerbi/datasets/
+
+📊 Dataset Summary:
+                 dataset  records time_range update_frequency                                description
+0        cluster_metrics      145     7 days           1 hour     Overall cluster performance and health
+1           node_metrics     3462     7 days           15 min  Per-node resource utilization and metrics
+2        request_metrics      360     7 days           1 hour            Request/operation type analysis
+3          shard_metrics      365     7 days          2 hours      Shard distribution and load balancing
+4         client_metrics      870     7 days           1 hour          Client/application usage patterns
+5       eviction_metrics     1445     7 days           30 min          Cache eviction policy performance
+6    replication_metrics     2308     7 days           15 min        Replication and consistency metrics
+7           cost_metrics       43     7 days            1 day             Cost analysis and optimization
+8           incident_log        8        N/A          6 hours                 Incident and alert history
+9   benchmark_comparison       30        N/A           Static              Comparison with other systems
+10  key_pattern_analysis        9        N/A           Static                Key access pattern analysis
+11    geographic_metrics      294        N/A          3 hours            Geographic distribution metrics
+Traceback (most recent call last):
+  File "C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py", line 1043, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py", line 1034, in main
+    f.write("2. Click 'Get Data' → 'Text/CSV'\n")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 20: character maps to <undefined>
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store>cd powerbi
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>python 01_generate_all_datasets.py
+============================================================
+Generating Power BI Datasets for Distributed KV Store
+============================================================
+Generating cluster_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:19: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='1H')
+✓ Generated 145 records
+Generating node_metrics.csv...
+✓ Generated 3462 records
+Generating request_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:208: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-07', periods=24, freq='1H')
+✓ Generated 360 records
+Generating shard_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:280: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='2H')
+✓ Generated 365 records
+Generating client_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:370: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='1H')
+✓ Generated 870 records
+Generating eviction_metrics.csv...
+✓ Generated 1445 records
+Generating replication_metrics.csv...
+✓ Generated 2308 records
+Generating cost_metrics.csv...
+✓ Generated 43 records
+Generating incident_log.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:685: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='6H')
+✓ Generated 5 records
+Generating benchmark_comparison.csv...
+✓ Generated 30 records
+Generating key_pattern_analysis.csv...
+✓ Generated 9 records
+Generating geographic_metrics.csv...
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py:894: FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead.
+  dates = pd.date_range(start='2024-01-01', end='2024-01-07', freq='3H')
+✓ Generated 294 records
+
+============================================================
+DATASET GENERATION COMPLETE
+============================================================
+Total datasets generated: 12
+Total records: 9,336
+Output directory: powerbi/datasets/
+
+📊 Dataset Summary:
+                 dataset  records time_range update_frequency                                description
+0        cluster_metrics      145     7 days           1 hour     Overall cluster performance and health
+1           node_metrics     3462     7 days           15 min  Per-node resource utilization and metrics
+2        request_metrics      360     7 days           1 hour            Request/operation type analysis
+3          shard_metrics      365     7 days          2 hours      Shard distribution and load balancing
+4         client_metrics      870     7 days           1 hour          Client/application usage patterns
+5       eviction_metrics     1445     7 days           30 min          Cache eviction policy performance
+6    replication_metrics     2308     7 days           15 min        Replication and consistency metrics
+7           cost_metrics       43     7 days            1 day             Cost analysis and optimization
+8           incident_log        5        N/A          6 hours                 Incident and alert history
+9   benchmark_comparison       30        N/A           Static              Comparison with other systems
+10  key_pattern_analysis        9        N/A           Static                Key access pattern analysis
+11    geographic_metrics      294        N/A          3 hours            Geographic distribution metrics
+Traceback (most recent call last):
+  File "C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py", line 1043, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi\01_generate_all_datasets.py", line 1034, in main
+    f.write("2. Click 'Get Data' → 'Text/CSV'\n")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 20: character maps to <undefined>
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>python .\powerbi\01_generate_all_datasets.py
+python: can't open file 'C:\\Users\\Chirayu Mahar\\Desktop\\distributed-kv-store\\powerbi\\powerbi\\01_generate_all_datasets.py': [Errno 2] No such file or directory
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>ls -la powerbi/datasets/
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>python -m venv venv
+
+C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>venv\Scripts\activate
+
+(venv) C:\Users\Chirayu Mahar\Desktop\distributed-kv-store\powerbi>pip install pandas numpy
+Collecting pandas
+  Using cached pandas-2.3.3-cp314-cp314-win_amd64.whl.metadata (19 kB)
+Collecting numpy
+  Using cached numpy-2.4.0-cp314-cp314-win_amd64.whl.metadata (6.6 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2025.3-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached pandas-2.3.3-cp314-cp314-win_amd64.whl (11.1 MB)
+Using cached numpy-2.4.0-cp314-cp314-win_amd64.whl (12.4 MB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached tzdata-2025.3-py2.py3-none-any.whl (348 kB)
+Installing collected packages: pytz, tzdata, six, numpy, python-dateutil, pandas
+Successfully installed numpy-2.4.0 pandas-2.3.3 python-dateutil-2.9.0.post0 pytz-2025.2 six-1.17.0 tzdata-2025.3
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+

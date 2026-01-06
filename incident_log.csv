@@ -1,0 +1,9 @@
+incident_id,timestamp,incident_type,severity,status,duration_minutes,affected_nodes,affected_shards,requests_affected,latency_spike_percent,availability_impact_percent,resolved_by,root_cause,resolution_action,prevention_action,sla_violation,cost_impact_usd
+INC-1000,2024-01-01 00:00:00,Network Partition,LOW,INVESTIGATING,5,3,3,59632,79,1.249985471532781,System,Hardware failure,Fixed hardware failure,Fix software bug,False,3410.623090456258
+INC-1001,2024-01-01 12:00:00,High Latency,MEDIUM,ACKNOWLEDGED,28,1,1,7527,208,2.2258787144133025,SRE Team,Deployment issue,Fixed deployment issue,Fix software bug,False,2341.520852520455
+INC-1002,2024-01-02 00:00:00,TTL Expiration Storm,HIGH,IN_PROGRESS,18,1,1,39321,122,2.089189311625439,Auto-Recovery,External dependency,Fixed external dependency,Improve failover,True,2170.796698129974
+INC-1003,2024-01-03 06:00:00,High Latency,MEDIUM,IN_PROGRESS,30,1,1,41301,383,0.1764294514624412,On-call Engineer,Resource exhaustion,Fixed resource exhaustion,Increase capacity,False,2105.2005378658623
+INC-1004,2024-01-04 06:00:00,Network Partition,MEDIUM,RESOLVED,11,2,2,50456,158,1.3614487145129606,On-call Engineer,Configuration error,Fixed configuration error,Improve failover,False,1265.0613164156052
+INC-1005,2024-01-04 12:00:00,Cache Eviction Storm,MEDIUM,INVESTIGATING,14,1,1,57373,463,1.1589130356090935,On-call Engineer,External dependency,Fixed external dependency,Increase capacity,False,2711.460104210737
+INC-1006,2024-01-05 00:00:00,TTL Expiration Storm,CRITICAL,INVESTIGATING,112,1,1,69698,494,1.58067021156784,On-call Engineer,Configuration error,Fixed configuration error,Update configuration,True,405.2153177690301
+INC-1007,2024-01-05 06:00:00,Node Failure,HIGH,ACKNOWLEDGED,6,1,2,37342,320,0.7221824972524049,System,Deployment issue,Fixed deployment issue,Improve failover,True,4636.296039562575
