@@ -1,15 +1,23 @@
 # 🎯 Launching: Revenue & Profitability Intelligence Platform
 I'm excited to share my latest project—a finance-grade analytics platform built with Power BI and Tableau that transforms complex financial data into board-ready executive insights.
-#The Business Challenge:
+<img width="1024" height="1024" alt="Gemini_Generated_Image_tiue71tiue71tiue" src="https://github.com/user-attachments/assets/537035d1-901d-41ec-8b88-76a3d1344b5e" />
+
+# The Business Challenge:
 CFOs and finance leaders face a critical problem: financial data is scattered across ERP systems, sales databases, and operational platforms. This fragmentation creates delays in monthly close processes, makes variance analysis time-consuming, and limits the speed of strategic decision-making. When executives ask "Which products drive profitability?" or "How are our margins trending by region?", finance teams often spend days compiling reports rather than minutes generating insights.
 The cost of this inefficiency extends beyond time. Without real-time visibility into contribution margins, companies misallocate resources. Without standardized profitability metrics, regional teams optimize for different objectives. Without drill-down capability from P&L to SKU-level detail, root cause analysis becomes guesswork rather than data-driven investigation.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_n0tjein0tjein0tj" src="https://github.com/user-attachments/assets/ff49f30c-3c55-491b-b690-b2859719594d" />
+
 # The Solution I Built:
 I developed an integrated financial intelligence platform that consolidates revenue, cost, and profitability data into eight interactive dashboards designed specifically for finance executives and board presentations. The platform processes transaction-level detail across products, customers, channels, and geographies while maintaining the auditability and precision required for financial reporting.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_y5se8fy5se8fy5se" src="https://github.com/user-attachments/assets/6bb9dfb1-edaf-424d-a9c0-f4763d72a9ca" />
+
 # Technical Architecture:
 The foundation is a dimensional data model architected following financial data warehouse best practices. I designed a star schema with four fact tables capturing sales transactions, budget allocations, operating expenses, and customer economics. These connect to seven dimension tables providing hierarchical analysis across products, customers, geographies, sales channels, departments, and expense categories. The data model handles 500,000+ transactions spanning three years with daily granularity.
 I engineered a Python-based data generation system that produces realistic financial datasets incorporating authentic business patterns. The system models seasonal revenue variations where Q4 revenue peaks align with fiscal year-end behavior. It implements customer segmentation economics where Enterprise customers have different discount structures, deal sizes, and acquisition costs than SMB customers. Product lifecycle patterns reflect how new products have lower margins during market introduction while mature products optimize for profitability. Regional variance captures how emerging markets have different cost structures and competitive dynamics than established geographies.
 The DAX calculation layer implements over 60 finance-specific measures that encode financial logic and accounting principles. Time intelligence measures calculate year-over-year growth, quarter-over-quarter trends, year-to-date accumulations, and moving annual totals with proper handling of fiscal calendar boundaries. Variance analysis measures decompose budget differences into volume variance, price variance, mix variance, and efficiency variance, providing finance teams with actionable explanations rather than just numbers. Profitability measures calculate gross margin, contribution margin, operating margin, and customer lifetime value with appropriate cost allocation logic.
 Advanced features include field parameters enabling dynamic metric selection where users can switch between revenue, margin, and growth metrics on the same visual. Calculation groups automate temporal patterns, allowing any measure to instantly show current period, prior period, year-to-date, or moving annual total values. Drill-through pages provide detailed analysis without cluttering executive summaries, letting users right-click any anomaly to investigate product-level, customer-level, or transaction-level details.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_9wdiqn9wdiqn9wdi" src="https://github.com/user-attachments/assets/0670d306-318b-454a-930f-b925931051be" />
+
 # Dashboard Capabilities:
 The Executive Financial Summary serves as the board presentation page, displaying critical KPIs with variance indicators, revenue waterfalls showing period-over-period bridges, margin trend analysis, and regional profitability heatmaps. Every metric includes comparison to budget, prior year, and forecast with visual indicators showing favorable versus unfavorable variance.
 Revenue Deep Dive enables comprehensive analysis of revenue composition, growth drivers, and quality metrics. It separates recurring versus one-time revenue, analyzes new customer acquisition versus existing customer expansion, tracks cohort retention patterns, and identifies concentration risks where too much revenue depends on too few customers. The analysis reveals not just how much revenue was generated but where growth is sustainable versus at-risk.
@@ -19,15 +27,23 @@ Geographic & Regional Analysis reveals how profitability varies by market with c
 Customer Segment Profitability calculates customer lifetime value, acquisition costs, and payback periods by segment. The analysis reveals that not all revenue is equally valuable—some customer segments are profitable from first purchase while others require long-term relationships to achieve positive ROI.
 Pricing & Discount Intelligence exposes discount patterns and their margin impact. It shows discount depth distribution, identifies excessive discounting by sales representatives or channels, and quantifies margin leakage from deviations off standard pricing. This visibility enables more disciplined pricing governance.
 Financial Planning & Variance provides budget-versus-actual analysis with variance attribution explaining differences in terms finance leaders understand. It tracks forecast accuracy over time, revealing whether finance planning assumptions are realistic or systematically biased.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_1hbzwi1hbzwi1hbz" src="https://github.com/user-attachments/assets/4c04dd46-e4ec-4c4c-828c-7fd8c03bafab" />
+
 # Business Impact:
 This platform transforms financial analysis from a monthly retrospective exercise into a continuous strategic capability. Finance teams that previously spent five days preparing board presentations can now generate current views in fifteen minutes. Executives who once waited for scheduled reports can now answer impromptu questions with drill-down analysis. Resource allocation decisions that relied on intuition and incomplete data can now be grounded in comprehensive profitability visibility.
 The platform demonstrates that effective financial analytics requires more than visualization skills—it demands understanding of financial logic, appreciation for audit requirements, and ability to translate complex accounting concepts into intuitive interfaces. Measures like contribution margin and customer lifetime value have specific calculation requirements that must be implemented precisely to produce trustworthy results.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_u5utb2u5utb2u5ut" src="https://github.com/user-attachments/assets/d1ca386b-94bc-4112-a74a-2ae2ef24a566" />
+
 # Professional Context:
 Through my internships at Cisco and Excelerate, I've designed dashboards supporting executive decision-making with multi-million-record datasets. At Cisco, I worked with finance teams to standardize profitability metrics across business units, ensuring consistent reporting for leadership reviews. At Excelerate, I built financial reporting workflows that reduced monthly close cycle time. These experiences informed the design decisions in this project, ensuring it reflects real-world financial reporting requirements rather than academic exercises.
 This platform represents capabilities typically expected at senior analyst or associate director levels in finance analytics teams at Fortune 500 companies. It shows proficiency not just in tools like Power BI and DAX, but in financial domain knowledge, executive communication, and production-ready solution delivery.
+<img width="1024" height="1536" alt="20260106_1549_Distributed Key-Value System_simple_compose_01ke9d30gzfty88brz0b129z55" src="https://github.com/user-attachments/assets/91457958-3c20-4050-9375-df259e61c06e" />
+
 # Why This Matters:
 Finance analytics is increasingly strategic rather than operational. Companies that democratize financial insights across their leadership teams make faster, better decisions than competitors where financial visibility remains siloed in the CFO's office. This project demonstrates my ability to build the infrastructure that enables that democratization while maintaining the precision and governance finance organizations require.
 The complete project is available on GitHub with comprehensive documentation including all Python scripts for data generation, complete DAX measure library with explanatory comments, data model design specifications, and implementation guides for both Power BI and Tableau. Whether you're a fellow BI professional, a hiring manager evaluating finance analytics candidates, or someone looking to enhance your financial reporting capabilities, I invite you to explore the repository.
+<img width="1024" height="1536" alt="20260106_1549_Distributed Key-Value System_simple_compose_01ke9d30h0fvb8h9794e987mb8" src="https://github.com/user-attachments/assets/4719fbfe-612c-468d-9d76-6482a07df4e0" />
+
 # 
 Tech Stack: Power BI Desktop | Tableau | Python 3.10+ | Advanced DAX | Pandas | NumPy
 Project Scale: 500K+ transactions | 11 tables | 60+ DAX measures | 8 dashboards | 60+ development hours
@@ -39,6 +55,7 @@ This production-grade solution consolidates transactional financial data spannin
 Project Highlights
 Built with Power BI and Tableau dual implementation, the platform processes 500,000+ financial transactions across three years of operations. The dimensional data model employs star schema design optimized for financial reporting, with fact tables capturing sales transactions, budget allocations, operating expenses, and customer lifetime economics. Advanced DAX measures implement financial logic including contribution margin calculation, variance attribution, customer lifetime value, and multi-period time intelligence.
 The solution demonstrates capabilities typically expected at Senior Financial Analyst or Associate Director levels in Fortune 500 finance organizations, showcasing not just technical proficiency but deep understanding of financial metrics, reporting requirements, and executive communication needs.
+<img width="1024" height="1536" alt="ChatGPT Image Jan 6, 2026, 03_51_23 PM" src="https://github.com/user-attachments/assets/e5a39c4c-466b-40cb-848b-4b5cbee0661f" />
 
 # 💼 Business Problem
 The Challenge
@@ -50,6 +67,7 @@ Limited Drill-Down Capability: Traditional financial reports provide summary-lev
 Resource Misallocation: Without clear visibility into profitability drivers, companies invest in low-margin products, serve unprofitable customer segments, and expand into markets with poor economics. These strategic misallocations compound over time, significantly impacting overall financial performance.
 The Cost
 The impact of inadequate financial intelligence extends beyond operational inefficiency. Companies with poor financial visibility miss revenue optimization opportunities worth 2-5% of annual revenue. They allocate R&D and marketing budgets sub-optimally, achieving 20-30% less ROI than they could with better data. They maintain product SKUs that destroy value rather than create it. Most critically, they make strategic decisions—acquisitions, market expansions, pricing changes—without complete understanding of financial implications.
+<img width="1024" height="1536" alt="ChatGPT Image Jan 6, 2026, 03_55_23 PM" src="https://github.com/user-attachments/assets/0855d3ea-2ce2-40a9-9d9c-a4da30431b50" />
 
 # 🏗️ Solution Architecture
 Dimensional Data Model
@@ -71,6 +89,7 @@ Variance Analysis Measures decompose budget differences into components finance 
 Profitability Measures calculate margins at multiple levels of the P&L. Gross margin measures product or channel profitability before overhead allocation. Contribution margin subtracts variable costs to assess segment viability. Operating margin includes allocated overhead to evaluate full profitability. Each margin calculation uses appropriate cost assignment logic and denominator selection.
 Customer Economics Measures enable lifetime value analysis and segment profitability assessment. Customer acquisition cost tracks sales and marketing investment to land new customers. Lifetime value projects future profit from customer relationships. CAC payback period shows how quickly customer investments recover. These metrics reveal which customer segments create sustainable value versus which drain resources.
 Dynamic Calculations use field parameters and calculation groups to reduce measure proliferation while increasing analytical flexibility. Field parameters allow users to select which KPI to display on a visual at runtime. Calculation groups apply temporal patterns to any measure, so a single base measure automatically has current period, prior period, year-to-date, and moving annual total variations without explicit coding.
+<img width="1024" height="1536" alt="20260106_1553_Distributed Storage Interface_simple_compose_01ke9d8ga0e1ptd3vqescz2741" src="https://github.com/user-attachments/assets/855602c5-d63d-42cb-8c78-89768ac6f927" />
 
 # 📊 Dashboard Capabilities
 1. Executive Financial Summary
@@ -141,6 +160,7 @@ Variance attribution decomposes differences into components. Revenue variance br
 Forecast accuracy tracking measures how closely forecasts matched actual results over multiple periods. The analysis reveals whether forecasts are systematically optimistic or pessimistic, whether accuracy is improving over time, and which products or geographies are most difficult to forecast. Finance teams use this to calibrate planning processes and adjust for known biases.
 Rolling forecast updates display how forecasts for the current year evolved throughout the year as new information emerged. This temporal view shows whether early-year forecasts were accurate or whether significant revisions occurred. Companies with stable operations should show minimal forecast changes while companies in dynamic environments expect more volatility.
 Scenario planning capabilities enable comparison of best-case, base-case, and worst-case scenarios against actual performance. This framework helps quantify uncertainty, prepare contingency plans, and track whether reality is trending toward optimistic or pessimistic scenarios.
+<img width="1024" height="1024" alt="Gemini_Generated_Image_luziyrluziyrluzi" src="https://github.com/user-attachments/assets/39446064-af64-42c0-aa0d-cc69a56de1c0" />
 
 # 💻 Technical Implementation
 Technology Stack
@@ -158,6 +178,7 @@ Iterative Development builds capability incrementally. Initial implementation es
 Testing and Validation ensures calculation accuracy and data integrity. DAX measures are tested against known results to verify logic correctness. Visual outputs are compared to manual calculations to confirm accuracy. Edge cases like null values, zero divisions, and partial periods are explicitly tested to ensure graceful handling. This rigor is essential for finance applications where calculation errors undermine trust in the entire platform.
 Documentation provides comprehensive explanations of data model structure, calculation logic, and usage guidance. Professional BI deliverables include technical documentation for IT teams maintaining the solution, user guides for business stakeholders consuming dashboards, and data dictionaries explaining field definitions. The project includes all these artifacts demonstrating full-stack delivery capability.
 Performance Optimization ensures responsive user experience even with large datasets. Strategies include minimizing calculated columns in favor of measures, using appropriate data types, configuring efficient relationships, and employing variables in DAX to avoid repeated calculations. Query response times under two seconds enable interactive exploration rather than waiting for each visual to render.
+<img width="1228" height="750" alt="diagram-export-1-6-2026-11_06_09-PM" src="https://github.com/user-attachments/assets/8f6d4d21-3bee-4778-bc3a-1ba8e7bad241" />
 
 # 📐 Data Model
 The dimensional model follows star schema architecture with fact tables at center connected to surrounding dimension tables. This design pattern is standard in financial data warehousing due to query performance characteristics and intuitive structure for business users.
@@ -177,6 +198,7 @@ DimExpenseCategory classifies costs into COGS, SG&A, and R&D with additional gra
 Relationships
 All relationships follow one-to-many cardinality from dimension (one) to fact (many). This structure is fundamental to star schema design and ensures correct aggregation behavior. FactSales relates to DimDate on DateKey supporting time-based filtering and time intelligence calculations. FactSales relates to DimProduct on ProductKey enabling product-level analysis. Similar relationships connect to customer, geography, and channel dimensions. Cross-filter direction is predominantly single (dimension filters fact but fact doesn't filter dimension) with selective use of bidirectional filtering where analysis requirements demand it.
 The date relationship is marked as active for each fact table since date-based analysis is universal in financial reporting. Other relationships are active by default but can be made inactive and activated through specific calculations where needed. This flexibility supports advanced scenarios like comparing different time periods or analyzing relationships between dimensions.
+<img width="1250" height="899" alt="diagram-export-1-6-2026-11_10_03-PM" src="https://github.com/user-attachments/assets/b2042aea-6dc9-4e22-8f18-4f31216d8e6f" />
 
 # 📊 DAX Measure Library
 The calculation layer contains 60+ DAX measures implementing financial logic with precision required for audit-ready reporting. Measures are organized into folders by functional area: Revenue, Profitability, Budget Variance, Customer Economics, Time Intelligence, and Advanced Analytics.
@@ -192,6 +214,8 @@ Operating Margin % = DIVIDE([Operating Profit], [Total Revenue], 0)
 
 
 These foundational measures provide building blocks for more complex calculations. Using measures rather than calculated columns is performance best practice in Power BI since measures compute on demand only for required aggregations rather than storing pre-computed values for every row.
+<img width="2574" height="1476" alt="sales dashboard - visual selection" src="https://github.com/user-attachments/assets/673f68cd-fee7-4e02-9557-c06c1e863ee1" />
+
 # Time Intelligence Suite
 daxRevenue YoY % = 
 VAR CurrentRevenue = [Total Revenue]
@@ -230,6 +254,8 @@ CALCULATE(
     )
 )
 Time intelligence measures enable period-over-period analysis fundamental to financial reporting. These patterns work correctly across fiscal year boundaries, handle partial periods appropriately, and return blank when prior period data doesn't exist rather than showing misleading zeros.
+<img width="3648" height="2124" alt="sales dashboard - visual selection (1)" src="https://github.com/user-attachments/assets/d90d7c81-53eb-45f0-938e-00a01ce62db4" />
+
 # Variance Analysis
 daxBudget Revenue = 
 CALCULATE(
@@ -302,6 +328,7 @@ VAR Actual = [Total Revenue]
 RETURN
 1 - ABS(DIVIDE(Actual - Forecast, Forecast, 0))
 Advanced measures implement sophisticated analytical patterns beyond simple aggregations, demonstrating deep DAX proficiency and business analytics understanding.
+<img width="2196" height="2034" alt="sales dashboard - visual selection (2)" src="https://github.com/user-attachments/assets/49cf4611-581e-491e-8c43-6195c7d2e1b5" />
 
 # 💡 Usage
 For Finance Professionals
@@ -312,4 +339,5 @@ For Hiring Managers
 Evaluate this project as evidence of capabilities in financial BI development. The scope demonstrates ability to deliver complete solutions, not just individual reports. Technical depth shows advanced platform skills. Business context indicates understanding of finance domain requirements.
 For Students
 Learn financial data warehousing and BI development through working example. The project includes educational documentation explaining design decisions. Code comments explain calculation logic. The progression from data generation through modeling to visualization illustrates end-to-end BI development.
+
 
